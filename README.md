@@ -5,8 +5,7 @@ Ansbile role to setup opendkim and sign keys.
 
 Dependncies
 ------------
-For EL systems, the opendkim package is available from EPEL. Enable EPEL before
-using this role.
+Ubuntu 18.04
 
 Role Variables
 --------------
@@ -37,7 +36,7 @@ Example with EPEL:
 ---
   - hosts: all
     vars:
-      admin_email: admin@example.com
+      dkim_admin_email: admin@example.com
       dkim_selector: default
       dkim_domains:
         - example.com
